@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font.css">
+    <script src="./script.js"></script>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="./templates/header.html"></div>
+    <div class="max-content">
+        <div id="main-container-window" class="main-container-window">
+            <div class="main-section">
+                <div class="main-img-logo">
+                    <img class="main-img" src="./img/pasta_main_img.jpg" alt="">
+                    <img class="pasta-logo" src="./img/pasta_logo.png" alt="">
+                </div>
+
+                <div id="main-section-content" class="main-section-content">
+                    <h1>Pasta Masta</h1>
+                    <div class="bewertungen">
+                        <div class="star-container">
+                            <img src="./img/star_yellow.png" alt="">
+                            <img src="./img/star_yellow.png" alt="">
+                            <img src="./img/star_yellow.png" alt="">
+                            <img src="./img/star_yellow.png" alt="">
+                            <img src="./img/star_half.png" alt="">
+
+                        </div>
+                        <p id="reviews">(363 Bewertungen)</p>
+                    </div>
+                    <div id="dish-section"></div>
+                </div>
+
+            </div>
+            <div id="shopping-basket-content" class="shopping-basket">
+                <h2 id="shopping-basket">Warenkorb</h2>
+                <div id="placeholder-basket" class="basket-food">
+                    <img src="./img/shopping_bag.png" alt="">
+                    <p id="shopping-Bag-german">Wähle leckere Gerichte aus der Karte<br>
+                        und bestelle dein Menü</p>
+                </div>
+                <div class="basket-dish-container" id="basket-dishes"></div>
+                <div class="basket-price">
+                    <table>
+                        <tr>
+                            <th id="subtotal">Zwischensumme:</th>
+                            <td id="price-sum">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <th id="delivery-cost">Lieferkosten:</th>
+                            <td>3,00 €</td>
+                        </tr>
+                        <tr>
+                            <th id="total">Gesamtsumme:</th>
+                            <td id="final-sum">3,00 €</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="order-now">
+                    <p id="readyToOrderText" class="d-none">Du hast deinen Mindestbestellwert von 10,00 €
+                        erreicht und kannst jetzt fortfahren.</p>
+                    <p id="mindestbestellwert-placeholder">Leider kannst du noch nicht bestellen.
+                        Pasta Masta liefert erst ab einem Mindestbestellwert
+                        von 10,00 € (exkl. Lieferkosten)</p>
+                    <p id="placeholderToMuch" class="d-none red">Maximaler Bestellwert 100,00 € exkl. Lieferkosten</p>
+                    <h4 id="orderCopledet" class="d-none red">Ihre Bestellung wurde aufgegeben!</h4>
+                    <button id="order-button" onclick="sendOrder()" class="order-button">Bestellen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="maps" class="maps-container">
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.141185506003!2d7.62436817697073!3d50.68020427079409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47be972d4809e89b%3A0xd5bf7130fcae36fe!2sWiedstra%C3%9Fe%2049%2C%2057610%20Altenkirchen!5e0!3m2!1sde!2sde!4v1710288641589!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div w3-include-html="./templates/footer.html"></div>
+</body>
+
+</html>

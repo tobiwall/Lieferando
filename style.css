@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100vh;
+    font-family: "lato", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 65px;
+}
+
+header {
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.max-width-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    gap: 24px;
+    color: white;
+    max-width: 1940px;
+    width: -webkit-fill-available;
+}
+
+.max-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 24px;
+    text-decoration: underline;
+    margin: 0;
+}
+
+header img {
+    height: 48px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-link p {
+    font-size: 48px;
+    margin: 0;
+}
+
+.header-right-end {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sidebar-button {
+    width: 56px;
+    height: 56px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 50%;
+}
+
+.sidebar-button:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.three-line {
+    width: 80%;
+    height: 4px;
+    background-color: black;
+}
+
+.german-flag:hover {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.main-container-window {
+    display: flex;
+    max-width: 1940px;
+}
+
+.main-section {
+    width: 70%;
+}
+
+.main-section-content {
+    padding: 16px;
+    margin-top: 300px;
+}
+
+.main-img-logo {
+    display: flex;
+    position: relative;
+}
+
+.main-img {
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pasta-logo {
+    height: 96px;
+    width: 96px;
+    position: absolute;
+    z-index: 2;
+    top: 265px;
+    left: 50%;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    padding: 16px;
+    background-color: white;
+    margin-left: -64px;
+}
+
+.star-container img {
+    height: 16px;
+}
+
+.bewertungen {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 16px;
+    color: orange;
+}
+
+.bewertungen p {
+    margin: 0;
+}
+
+.shopping-basket {
+    width: 30%;
+    min-width: 501px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -2px 0px 6px 0px lightgray;
+}
+
+.shopping-basket h2 {
+    height: 48px;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.responsive-shopping-basket {
+    margin-top: 400px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -2px 0px 6px 0px lightgray;
+}
+
+.responsive-window {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.basket-food {
+    min-height: 340px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(157, 156, 156);
+    font-size: 24px;
+    border-bottom: 2px solid lightgray;
+}
+
+.basket-price {
+    width: 90%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid lightgray;
+}
+
+.basket-price table {
+    width: 100%;
+}
+
+.basket-price th {
+    text-align: start;
+}
+
+.basket-price td {
+    text-align: end;
+}
+
+.order-now {
+    width: 90%;
+    text-align: center;
+    color: rgb(157, 156, 156);
+    font-size: 24px;
+}
+
+.order-button {
+    width: 90%;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: -2px 0px 6px 0px orange;
+    background-color: rgb(253, 233, 196);
+    border: none;
+    font-size: 32px;
+}
+
+.order-button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 209, 124);
+}
+
+.dish-container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px 0px 6px 0px lightgray;
+    margin-bottom: 16px;
+    position: relative;
+    min-height: 160px;
+}
+
+.dish-left-part {
+    padding: 16px;
+}
+
+.dish-right-part {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.plus-icon-button {
+    height: 32px;
+    width: 32px;
+    background-color: lightgray;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    margin: 4px;
+}
+
+.plus-icon {
+    height: 24px;
+}
+
+.plus-icon-button:hover {
+    cursor: pointer;
+}
+
+.dish-img {
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.basket-dish-container {
+    width: 90%;
+}
+
+.basket-dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 4px 8px 4px;
+    box-shadow: -2px 0px 6px 0px orange;
+    margin-bottom: 16px;
+}
+
+.minusplus {
+    width: 32px;
+    height: 32px;
+    box-shadow: -2px 0px 6px 0px orange;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket-dish-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+}
+
+.basket-dish img {
+    height: 20px;
+}
+
+.minusplus:hover {
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.maps-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 130px;
+}
+
+.maps {
+    max-width: 1940px;
+    width: 100%;
+    margin: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.datenschutz-container {
+    padding-bottom: 100px;
+}
+
+.inner-container-datenschutz {
+    max-width: 1940px;
+    margin: 7px;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.main-container-impressum {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    gap: 32px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.body-impressum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .main-section-content {
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .sidebar-button {
+        display: flex;
+    }
+
+    .shopping-basket {
+        display: none;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .max-width-content-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .dish-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dish-img {
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+
+    .headline-datenschutz {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        font-size: 24px;
+    }
+}
